@@ -14,10 +14,13 @@ Why Choose LibMan?
 In a world full of complicated library management systems, LibMan focuses on simplicity and elegance. Whether you're running a small school library or managing your personal book collection, LibMan provides a minimalistic, stress-free way to keep everything organized. Here's why you'll love using LibMan:
 
 User-Centric Design: LibMan has a clean and user-friendly interface to ensure the best user experience (UX). No more clunky forms or difficult navigation—just smooth, intuitive interactions.
+
 Fast & Efficient: With quick actions, you'll spend less time managing your books and more time reading.
+
 No Learning Curve: You don't need to be tech-savvy to use LibMan. Simply open the app, and you’re ready to start managing your library!
+
 Extendable & Open Source: Developers are welcome! Modify and expand LibMan to fit your needs—it's open-source and highly customizable.
-Screenshots
+
 
 How to Install
 1. Clone the Repository
@@ -27,17 +30,18 @@ bash
 
 git clone https://github.com/Basty-devel/libman.git
 cd libman
+
 2. Install Dependencies
-LibMan requires Python 3.x and tkinter, which is included in standard Python installations. If you're missing tkinter, you can install it as follows:
+LibMan requires Python 3.x and tkinter plus Pillow which is included in standard Python installations. If you're missing a module, you can run it as follows:
 
 For Ubuntu/Debian:
 
-bash
+bash libman.sh
 
-sudo apt-get install python3-tk
+
 For MacOS:
 
-tkinter is included with Python, but you may need to ensure that you have the latest version installed from python.org.
+tkinter is included with Python, but you may need to ensure that you have the latest version installed from python.org and the module Pillow.
 
 3. Prepare the Database
 LibMan uses a simple text file to store your books. If you already have a collection, create a file (e.g., books.txt) with one book name per line:
@@ -53,9 +57,7 @@ When you run LibMan, it will ask you for this file to load the existing books.
 4. Run the Application
 Run the following command to start LibMan:
 
-bash
-
-python3 libman.py
+bash libman.sh
 Once launched, you'll be greeted with the modern and intuitive GUI to manage your library. Just follow the on-screen instructions to add, lend, return, and view books!
 
 How to Use
